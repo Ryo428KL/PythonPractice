@@ -47,8 +47,35 @@ elif val6 == 'わんこ':
 else:
   print('猫と犬以外ですね')
 
+# 日付型
+import datetime
+print(datetime.date.today())
+print(datetime.datetime.today())
+print(datetime.date(2023,1,14))
+print(datetime.datetime(2023,1,14,20,25,16))
+today = datetime.date.today()
+now = datetime.datetime.today()
+print(today.year)
+print(today.month)
+print(today.day)
+print(now.hour)
+print(now.minute)
+print(now.second)
+
+# 曜日 ※0 : 月曜日, 1 : 火曜日, 2 : 水曜日, 3 : 木曜日, 4 : 金曜日, 5 : 土曜日, 6 : 日曜日
+print(datetime.date.today().weekday())
+print(datetime.date(2023,1,1).weekday())
 
 # for文
+forAry = [1,2,3,4,5]
+for data in forAry:
+  print(data)
+
+sumVal = 0
+for data in forAry:
+  sumVal += data
+print('sumVal is ' + str(sumVal))
+print('sum of forAry is ' + str(sum(forAry))) # こっちでよい
 
 # Map
 
@@ -58,5 +85,6 @@ else:
 
 # csv読込、csv出力
 
-
 # 非同期処理
+
+
